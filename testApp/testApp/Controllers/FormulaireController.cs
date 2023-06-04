@@ -45,8 +45,6 @@ public class FormulaireController : ControllerBase
             string filePath = Path.Combine(Directory.GetCurrentDirectory(), "Uploads", fileName);
             if (module.file != null && module.file.Length > 0)
             {
-                // Generate a unique filename or use the original filename
-
                 using (var stream = new FileStream(filePath, FileMode.Create))
                 {
                     await module.file.CopyToAsync(stream);

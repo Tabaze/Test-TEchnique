@@ -23,21 +23,17 @@
     </div>
     <div class="form">
       <h2>Login to your account</h2>
-      <form>
-        <input type="text" placeholder="Username"/>
-        <input type="password" placeholder="Password"/>
-        <button>Login</button>
+      <form id="formLogIn" onsubmit="return false">
+        <input type="text" name="username" placeholder="username"/>
+        <input type="password" name="password" placeholder="password"/>
+        <button type="submit">Login</button>
       </form>
     </div>
-    <!-- <div class="cta"><a href="http://andytran.me">Forgot your password?</a></div>s -->
   </div>
   <script src="../DIST/jquery.min.js"></script>
   <script >
-    // Toggle Function
 $('.toggle').click(function(){
-  // Switches the Icon
   $(this).children('i').toggleClass('fa-pencil');
-  // Switches the forms  
   $('.form').animate({
     height: "toggle",
     'padding-top': 'toggle',
@@ -46,5 +42,7 @@ $('.toggle').click(function(){
   }, "slow");
 });
   </script>
+  <script src="../JS/global.js"></script>
+  <script type="module" src="../JS/Login/core.js"></script>
 </body>
 </html>

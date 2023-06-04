@@ -16,6 +16,7 @@ const ajaxJSONGet = (url, dt) => {
         data: JSON.stringify(dt),
         contentType: "application/json",
         crossDomain: true,
+        timeout: 5000,
         success: function (response) {
             console.log(response);
             lt = response
@@ -31,9 +32,9 @@ const ajaxJSONPost = (url, dt) => {
     $.ajax({
         url: Baseurl + url,
         type: "POST",
-        data: JSON.stringify(dt),
+        data: dt,
         contentType: "application/json",
-        crossDomain: true,
+        timeout: 5000,
         success: function (response) {
             console.log(response);
             lt = response
@@ -49,17 +50,33 @@ const addFormulaireAjax = (formData) => {
     $.ajax({
         url: Baseurl + 'api/Formulaire/insertFormulaire',
         type: 'POST',
-        data: formData,
+        data: JSON.stringify(formData),
         processData: false,
         contentType: false,
+        timeout: 5000,
         success: function (response) {
-            lt=response;
+            lt = response;
         },
         error: function (xhr, status, error) {
-            lt=error
+            lt = error
         }
     });
     return lt
+}
+const asyncAjax = async (url, dt) => {
+    try {
+        var response = await $.ajax({
+            url: Baseurl + url,
+            type: 'POST',
+            data: JSON.stringify(dt),
+            processData: false,
+            contentType: false,
+            timeout: 5000
+        });
+        console.log(response);
+    } catch (error) {
+        console.log(error);
+    }
 }
 function ekUpload() {
     function Init() {
@@ -69,13 +86,14 @@ function ekUpload() {
         var fileSelect = document.getElementById('file-upload'),
             fileDrag = document.getElementById('file-drag'),
             submitButton = document.getElementById('submit-button');
-
-        fileSelect.addEventListener('change', fileSelectHandler, false);
+        if (fileSelect != null)
+            fileSelect.addEventListener('change', fileSelectHandler, false);
 
         // Is XHR2 available?
         var xhr = new XMLHttpRequest();
         if (xhr.upload) {
             // File Drop
+            if (!fileDrag) return
             fileDrag.addEventListener('dragover', fileDragHover, false);
             fileDrag.addEventListener('dragleave', fileDragHover, false);
             fileDrag.addEventListener('drop', fileSelectHandler, false);
