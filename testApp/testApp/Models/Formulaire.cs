@@ -15,7 +15,20 @@ namespace testApp.Models
 
         public int? experience { get; set; }
         public string? dernierEmployeur { get; set; }
-        
+
         public string path { get; set; }
+
+        public Formulaire() { }
+        public Formulaire(Formulaire form)
+        {
+            this.nom = form.nom;
+            this.prenom = form.prenom;
+            this.mail = form.mail;
+            this.telephone = form.telephone;
+            this.niveau = form.niveau;
+            this.experience = form.experience;
+            this.dernierEmployeur = form.dernierEmployeur;
+            this.path = form.path;
+        }
     }
 }

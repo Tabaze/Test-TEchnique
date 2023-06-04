@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l7qcC1s1j3PSbuiYXd5NK1/i3d7oY/SQPMVtX3FK8qtmVsdazEXFuB3Y8S64rtg27tjYXVNcjDSo9Hc8UHsBYw==",
+  "dgSpecHash": "7BEfVKYtmDi8sah45DklJW0/VvjlSCHHb05jeSQa4mtC5Zv8unnEg0QNF3JjMT022Si8RpGWBo03PZ/VIBevBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\OUAIL\\Desktop\\we cout\\testApp\\testApp\\testApp.csproj",
+  "projectFilePath": "C:\\Users\\OUAIL\\Desktop\\Test TEchnique\\testApp\\testApp\\testApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\OUAIL\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\OUAIL\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

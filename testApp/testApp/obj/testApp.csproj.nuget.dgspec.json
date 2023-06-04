@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OUAIL\\Desktop\\we cout\\testApp\\testApp\\testApp.csproj": {}
+    "C:\\Users\\OUAIL\\Desktop\\Test TEchnique\\testApp\\testApp\\testApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OUAIL\\Desktop\\we cout\\testApp\\testApp\\testApp.csproj": {
+    "C:\\Users\\OUAIL\\Desktop\\Test TEchnique\\testApp\\testApp\\testApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OUAIL\\Desktop\\we cout\\testApp\\testApp\\testApp.csproj",
+        "projectUniqueName": "C:\\Users\\OUAIL\\Desktop\\Test TEchnique\\testApp\\testApp\\testApp.csproj",
         "projectName": "testApp",
-        "projectPath": "C:\\Users\\OUAIL\\Desktop\\we cout\\testApp\\testApp\\testApp.csproj",
+        "projectPath": "C:\\Users\\OUAIL\\Desktop\\Test TEchnique\\testApp\\testApp\\testApp.csproj",
         "packagesPath": "C:\\Users\\OUAIL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OUAIL\\Desktop\\we cout\\testApp\\testApp\\obj\\",
+        "outputPath": "C:\\Users\\OUAIL\\Desktop\\Test TEchnique\\testApp\\testApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
