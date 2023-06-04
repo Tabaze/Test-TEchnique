@@ -61,9 +61,6 @@ const addFormulaireAjax = (formData) => {
     });
     return lt
 }
-
-// File Upload
-// 
 function ekUpload() {
     function Init() {
 
