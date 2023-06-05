@@ -34,7 +34,7 @@ namespace testApp.Controllers
             return responce;
         }
 
-        [HttpPost("signIn")]
+        [HttpGet("signIn")]
         public async Task<ResponceMessage> SignIn(string username, string password)
         {
             ResponceMessage responce = new ResponceMessage();

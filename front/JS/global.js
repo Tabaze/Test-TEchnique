@@ -8,12 +8,12 @@ const formToJson = ($form) => {
     });
     return data
 }
-const ajaxJSONGet = (url, dt) => {
+const ajaxJSON = (url, dt) => {
     let lt
     $.ajax({
         url: Baseurl + url,
         type: "GET",
-        data: JSON.stringify(dt),
+        data: dt,
         contentType: "application/json",
         crossDomain: true,
         timeout: 5000,

@@ -1,8 +1,8 @@
 export function login(dt) {
-    let lt = ajaxJSONPost('api/User/signIn', dt);
+    let lt = ajaxJSON('api/User/signIn', dt);
     return lt
 }
 export function getAll() {
-    let lt = ajaxJSONGet('api/User/getAll', '')
+    let lt = ajaxJSON('api/User/getAll', '')
     return lt
 }
